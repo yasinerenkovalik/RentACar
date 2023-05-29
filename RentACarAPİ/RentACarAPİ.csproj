@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Busines\Busines.csproj" />
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj" />
     <ProjectReference Include="..\Entities\Entities.csproj" />
   </ItemGroup>
 

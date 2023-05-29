@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace RentACarAPİ.Controller
 {
-    [Route("api/merhaba")]
+    [Route("api/[controller]")]
     [ApiController]
     public class RentACarController : ControllerBase
     {
@@ -15,7 +15,7 @@ namespace RentACarAPİ.Controller
         {
             _service = new RentACarService();
         }
-        [HttpGet]
+        [HttpGet("getall")]
         public List<Category> GetCategories() {
             return _service.GetAll(); 
         }
