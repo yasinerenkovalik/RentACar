@@ -24,5 +24,21 @@ namespace RentACarAPİ.Controller
         {
             return _service.GetById(id);
         }
+        [HttpPost("create")]
+        public Category Create(Category category)
+        {
+            return _service.CreateCategory(category);
+        }
+
+        [HttpPut("update")]
+        public Category Update(Category category)
+        {
+            return _service.UpdateCategory(category);
+        }
+        [HttpDelete("delete/{id}")]
+        public void Delete(int id)
+        {
+             _service.DeleteCategory(id);
+        }
     }
 }

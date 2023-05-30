@@ -51,6 +51,7 @@ namespace DataAccess.Concrete
             using (var dbcontext = new RentACarContext())
             {
                 dbcontext.Categories.Update(category);
+                dbcontext.SaveChanges();
                 return category;
             }
         }
